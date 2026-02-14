@@ -29,11 +29,11 @@ run_worker_first = true
 crons = ["0 16 * * *"]	#定时任务每天晚上12点执行
 
 
-[vars]
-orm_log = false
-domain = ["mail.388008.xyz"]				#邮件域名可可配置多个 示例: ["example1.com","example2.com"]
-admin = "admin@mail.388008.xyz"				#管理员的邮箱	示例: admin@example.com
-jwt_secret = "67e631dd-9566-457f-82f1-9a06cafa6dc8"			#jwt令牌的密钥,随便填一串字符串
+#[vars]
+#orm_log = false
+#domain = ["mail.388008.xyz"]				#邮件域名可可配置多个 示例: ["example1.com","example2.com"]
+#admin = "admin@mail.388008.xyz"				#管理员的邮箱	示例: admin@example.com
+#jwt_secret = "67e631dd-9566-457f-82f1-9a06cafa6dc8"			#jwt令牌的密钥,随便填一串字符串
 
 [build]
 command = "pnpm --prefix ../mail-vue install && pnpm --prefix ../mail-vue run build"
